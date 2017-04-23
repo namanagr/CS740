@@ -11,4 +11,8 @@ cd ~
 
 It starts snort and creates alerts in the file ~/logs/alerts
 
+## In a separate terminal, run "python process.py".
+It will read snort alerts from ~/logs/alerts file, process them and commmunicate that to the softNIC program. 
+
+
 
