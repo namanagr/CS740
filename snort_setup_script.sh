@@ -64,9 +64,15 @@ sudo cp ~/community-rules/* /etc/snort/rules
 # Download the namanagr/CS740 git file to get updated snort.conf and local rules
 sudo wget https://github.com/namanagr/CS740/archive/master.zip
 sudo unzip master.zip 
-sudo tar xvfz CS740-master/snortrules-snapshot-2990.tar.gz -C /etc/snort/
+sudo tar xvfz CS740-master/snortrules-snapshot-2990.tar.gz -C /etc/snort
 
 sudo cp CS740-master/snort.conf /etc/snort/snort.conf
 sudo cp CS740-master/local.rules /etc/snort/rules/local.rules
 
+# Testing snort
+sudo snort -T -c /etc/snort/snort.conf
+
+# create log folder
+cd ~
+mkdir log
 
