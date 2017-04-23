@@ -72,7 +72,9 @@ sudo cp CS740-master/local.rules /etc/snort/rules/local.rules
 # Testing snort
 sudo snort -T -c /etc/snort/snort.conf
 
-# create log folder
+# Placing the process.py file at the right place
 cd ~
 mkdir log
+cp CS740-master/process.py ~/logs/
+
 
